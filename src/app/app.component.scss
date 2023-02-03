@@ -1,0 +1,22 @@
+
+#main{
+  height: 52vh!important;
+}
+
+#signInBackground{
+  display: flex;
+  background-size: auto;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  #main{
+    height: 73%!important;
+  }
+
+  #codeOneH2{
+    padding-top: 13vh;
+  }
+}
+
+
+
