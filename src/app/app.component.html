@@ -1,7 +1,9 @@
+<app-navbar></app-navbar>
+
 <div id="signInBackground" [style.background-image]="'url(assets/authbackground.png)'">
   <div class="container mt-5 " style="height: 80vh;">
     <div id="main" class="row align-top">
-      <div class="col-12 col-md-6 align-self-center card">
+      <div id="card" [ngClass]="{'border border-success': isLeftGreen}" class="col-12 col-md-6 align-self-center card ">
         <div class="text-center">
           <h2 id="codeOneH2">Code #1</h2>
         </div>
@@ -10,7 +12,7 @@
           <small [innerText]="porcentageOne"></small>
         </div>
       </div>
-      <div class="col-12 col-md-6 align-self-center align-top card">
+      <div id="card2" [ngClass]="{'border border-success': isRigthGreen}" class="col-12 col-md-6 align-self-center align-top card">
         <div class="text-center ">
           <h2>Code #2</h2>
         </div>
@@ -22,7 +24,7 @@
     </div>
     <div class="text-center">
       <div>
-        <button (click)="getTimes()" class="btn btn-primary mt-5 mt-lg-0">Run</button>
+        <button (click)="getTimes()" class="btn px-5  btn-primary mt-5 mt-lg-0">Run It</button>
       </div>
     </div>
   </div>

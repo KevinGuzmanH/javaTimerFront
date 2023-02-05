@@ -1,27 +1,26 @@
-# Javatimer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+# Java Code Performance Comparison Tool
+#### A simple tool to compare the performance of two Java code snippets.
 
-## Development server
+## Website
+https://java-code-time-comparator.netlify.app
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Usage
+- Write your Java code snippets in the text areas provided.
+- Press the "Run" button to compile and execute both code snippets.
+- Observe the results of the comparison, including the execution time of each code snippet.
+## Features
+- Compile and run two Java code snippets to compare their performance.
+- Display the execution time of each code snippet.
+- Easy to use with simple and intuitive user interface.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Build with
+- Gsap - GreenSock Animation Platform - [![GSAP version](https://img.shields.io/badge/GSAP-3.11.4-green.svg)](https://greensock.com/gsap/)
+- Angular - CLI - Angular CLI 15.1.4 - [![Angular-cli version](https://img.shields.io/badge/Angular-15.1.4-red.svg)](https://angular.io/cli)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Note
+- Make sure the code snippets you enter are valid and will compile correctly.
+- The tool does not guarantee the accuracy of the results, as the performance of code can vary depending on various factors such as the system environment and other processes running on the machine.
+## Contribute
+Feel free to contribute to this project by submitting bug reports or pull requests on GitHub.

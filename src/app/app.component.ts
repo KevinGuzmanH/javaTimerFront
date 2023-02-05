@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {TimerSService} from "./service/timer-s.service";
-
+import { gsap, Power2, Elastic ,Bounce} from 'gsap/all';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,6 +13,8 @@ export class AppComponent {
   porcentageOne = "0 secs";
   porcentageTwo = "0 secs";
   test = "test";
+  public isLeftGreen = false;
+  public isRigthGreen = false;
 
   constructor(private timerService: TimerSService) {
   }
@@ -25,6 +27,29 @@ export class AppComponent {
         this.results = data;
         this.porcentageOne = this.results[0];
         this.porcentageTwo = this.results[1];
+
+        if (Number(this.porcentageOne) < Number(this.porcentageTwo)){
+          this.isLeftGreen = true;
+          this.isRigthGreen = false;
+          gsap.to("#card", {
+            duration: 2,
+            y: -100,
+            yoyo: true,
+            ease: Bounce.easeOut,
+            repeat: 1,
+          });
+        }
+        else{
+          this.isRigthGreen = true;
+          this.isLeftGreen = false;
+          gsap.to("#card2", {
+            duration: 2,
+            y: -100,
+            yoyo: true,
+            ease: Bounce.easeOut,
+            repeat: 1,
+          });
+        }
 
         if (this.porcentageOne.split(".")[0] != "Main" )
           this.porcentageOne = this.porcentageOne + " milliseconds";

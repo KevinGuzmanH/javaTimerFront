@@ -5,12 +5,12 @@ import {Observable} from "rxjs";
 @Injectable({
   providedIn: 'root'
 })
+
 export class TimerSService {
 
-  private URL = "http://localhost:8080"
+   private URL = "https://peppy-love-production.up.railway.app"
 
   constructor(private http: HttpClient) { }
-
 
   getTime(code: string[]): Observable<any>{
     return this.http.post(this.URL + '/timer',code)

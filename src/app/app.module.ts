@@ -7,10 +7,12 @@ import {FormsModule} from "@angular/forms";
 import {timer} from "rxjs";
 import {TimerSService} from "./service/timer-s.service";
 import {HttpClientModule} from "@angular/common/http";
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

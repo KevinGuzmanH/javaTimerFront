@@ -35,7 +35,8 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
-              ,"node_modules/darkmode-js/lib/darkmode-js.min.js"
+              ,"node_modules/darkmode-js/lib/darkmode-js.min.js",
+              "node_modules/gsap/dist/gsap.js"
             ]
           },
           "configurations": {
