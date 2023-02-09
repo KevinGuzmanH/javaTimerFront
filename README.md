@@ -7,6 +7,8 @@ https://java-code-time-comparator.netlify.app
 
 
 # Usage
+
+![](https://github.com/KevinGuzmanH/javaTimerFront/blob/master/ezgif.com-video-to-gif.gif)
 - Write your Java code snippets in the text areas provided.
 - Press the "Run" button to compile and execute both code snippets.
 - Observe the results of the comparison, including the execution time of each code snippet.
